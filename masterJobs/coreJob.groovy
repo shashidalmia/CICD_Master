@@ -30,9 +30,8 @@ job('CICD/seed') {
             }
     }
 
-    dsl {
-        text(readFileFromWorkspace('masterJobs/coreJob.groovy'))
-        removeAction('DELETE')
-    }    
+    steps {
+        shell('echo Hello World!')
+    }  
 
 }
