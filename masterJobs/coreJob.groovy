@@ -24,7 +24,7 @@ job('CICD/seed') {
 
      environmentVariables {
             env('GROUP_ID', 'com.shashi.cicd')
-            env('ARTIFACT_VERSION', ${CICD_VERSION})
+            env('ARTIFACT_VERSION', '${CICD_VERSION}')
             env('NEXUS_URL', 'http://nexus:8080')
         }
 
