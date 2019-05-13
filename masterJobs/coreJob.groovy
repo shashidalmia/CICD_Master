@@ -18,7 +18,7 @@ pipelineJob('CICD/seed') {
     }*/
   }
 
-    wrappers {
+    triggers {
         environmentVariables {
                 env('GROUP_ID', 'com.shashi.cicd')
                 env('ARTIFACT_VERSION', '${CICD_VERSION}')
