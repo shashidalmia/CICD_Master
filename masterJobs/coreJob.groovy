@@ -22,10 +22,12 @@ job('CICD/seed') {
         preBuildCleanup()
     }
 
-     environmentVariables {
-            env('GROUP_ID', 'com.shashi.cicd')
-            env('ARTIFACT_VERSION', '${CICD_VERSION}')
-            env('NEXUS_URL', 'http://nexus:8080')
-        }
+    wrappers {
+        environmentVariables {
+                env('GROUP_ID', 'com.shashi.cicd')
+                env('ARTIFACT_VERSION', '${CICD_VERSION}')
+                env('NEXUS_URL', 'http://nexus:8080')
+            }
+    }
 
 }
