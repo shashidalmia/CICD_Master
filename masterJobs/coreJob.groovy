@@ -1,4 +1,4 @@
-pipelineJob('CICD/seed') {
+job('CICD/seed') {
   
   parameters {
 
